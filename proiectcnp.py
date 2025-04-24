@@ -10,10 +10,9 @@ hash_table = [[] for _ in range(1009)]  # 1009 este un număr prim pentru a evit
 
 
 def generate_cnp():
-    """Generează un CNP valid conform regulilor din România."""
     year = random.randint(1900, 2022)
     month = random.randint(1, 12)
-    day = random.randint(1, 28)
+    day = random.randint(1, 30)
     county = random.choice([x for x in range(1, 53) if x not in [47, 48, 49, 50, 51]])
     unique_id = random.randint(100, 999)
     control_digit = random.randint(0, 9)
