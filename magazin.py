@@ -66,5 +66,5 @@ def simuleaza_casa(json_path):
                 print(f"    {v} lei x {c}")
             actualizeaza_stoc(bancnote, combinatia)
             client += 1
-
+    print(len(bancnote))
 simuleaza_casa('date.json')
